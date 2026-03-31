@@ -29,7 +29,7 @@ A curated index of open-source projects that ship in-repo `skill` definitions fo
 ## GPU Kernel Libraries
 
 <details>
-<summary><a href="https://github.com/huggingface/kernels/tree/main"><b>huggingface/kernels</b></a> [![Stars](https://img.shields.io/github/stars/huggingface/kernels?style=flat-square)](https://github.com/huggingface/kernels) — GPU kernels / operator optimization &nbsp;·&nbsp; <i>skills at repo root</i></summary>
+<summary><a href="https://github.com/huggingface/kernels/tree/main"><b>huggingface/kernels</b></a> <img src="https://img.shields.io/github/stars/huggingface/kernels?style=flat-square" alt="stars"> — GPU kernels / operator optimization &nbsp;·&nbsp; <i>skills at repo root</i></summary>
 <br>
 
 Kernel-focused repository from Hugging Face. Skills live at the **repository root** rather than `.claude/skills`.
@@ -37,7 +37,7 @@ Kernel-focused repository from Hugging Face. Skills live at the **repository roo
 </details>
 
 <details>
-<summary><a href="https://github.com/flashinfer-ai/flashinfer/tree/main/.claude/skills"><b>flashinfer-ai/flashinfer</b></a> [![Stars](https://img.shields.io/github/stars/flashinfer-ai/flashinfer?style=flat-square)](https://github.com/flashinfer-ai/flashinfer) — GPU kernels / LLM inference ops</summary>
+<summary><a href="https://github.com/flashinfer-ai/flashinfer/tree/main/.claude/skills"><b>flashinfer-ai/flashinfer</b></a> <img src="https://img.shields.io/github/stars/flashinfer-ai/flashinfer?style=flat-square" alt="stars"> — GPU kernels / LLM inference ops</summary>
 <br>
 
 Full CUDA kernel lifecycle covering attention, decode, and custom inference operators.
@@ -55,7 +55,7 @@ Full CUDA kernel lifecycle covering attention, decode, and custom inference oper
 ## LLM Serving & Inference Runtime
 
 <details>
-<summary><a href="https://github.com/sgl-project/sglang/tree/main/.claude/skills"><b>sgl-project/sglang</b></a> [![Stars](https://img.shields.io/github/stars/sgl-project/sglang?style=flat-square)](https://github.com/sgl-project/sglang) — LLM serving / inference system</summary>
+<summary><a href="https://github.com/sgl-project/sglang/tree/main/.claude/skills"><b>sgl-project/sglang</b></a> <img src="https://img.shields.io/github/stars/sgl-project/sglang?style=flat-square" alt="stars"> — LLM serving / inference system</summary>
 <br>
 
 One of the most visible open-source LLM serving stacks shipping skills in-tree. Covers the full kernel authoring and CI workflow.
@@ -71,7 +71,7 @@ One of the most visible open-source LLM serving stacks shipping skills in-tree. 
 </details>
 
 <details>
-<summary><a href="https://github.com/NVIDIA/TensorRT-LLM/tree/main/.claude/skills"><b>NVIDIA/TensorRT-LLM</b></a> [![Stars](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM?style=flat-square)](https://github.com/NVIDIA/TensorRT-LLM) — production LLM inference framework</summary>
+<summary><a href="https://github.com/NVIDIA/TensorRT-LLM/tree/main/.claude/skills"><b>NVIDIA/TensorRT-LLM</b></a> <img src="https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM?style=flat-square" alt="stars"> — production LLM inference framework</summary>
 <br>
 
 NVIDIA's production-focused LLM runtime. Skills are oriented around enterprise onboarding and CI/pipeline incident handling.
@@ -87,7 +87,7 @@ NVIDIA's production-focused LLM runtime. Skills are oriented around enterprise o
 </details>
 
 <details>
-<summary><a href="https://github.com/InternLM/lmdeploy/tree/main/.claude/skills"><b>InternLM/lmdeploy</b></a> [![Stars](https://img.shields.io/github/stars/InternLM/lmdeploy?style=flat-square)](https://github.com/InternLM/lmdeploy) — LLM deployment toolkit / inference serving</summary>
+<summary><a href="https://github.com/InternLM/lmdeploy/tree/main/.claude/skills"><b>InternLM/lmdeploy</b></a> <img src="https://img.shields.io/github/stars/InternLM/lmdeploy?style=flat-square" alt="stars"> — LLM deployment toolkit / inference serving</summary>
 <br>
 
 A toolkit for compressing, deploying, and serving LLMs with TurboMind and PyTorch backends. Skills focus on model integration and developer workflow.
@@ -105,7 +105,7 @@ A toolkit for compressing, deploying, and serving LLMs with TurboMind and PyTorc
 ## Deep Learning Frameworks
 
 <details>
-<summary><a href="https://github.com/pytorch/pytorch/tree/main/.claude/skills"><b>pytorch/pytorch</b></a> [![Stars](https://img.shields.io/github/stars/pytorch/pytorch?style=flat-square)](https://github.com/pytorch/pytorch) — deep learning framework / operator authoring &nbsp;·&nbsp; <i>12 skills</i></summary>
+<summary><a href="https://github.com/pytorch/pytorch/tree/main/.claude/skills"><b>pytorch/pytorch</b></a> <img src="https://img.shields.io/github/stars/pytorch/pytorch?style=flat-square" alt="stars"> — deep learning framework / operator authoring &nbsp;·&nbsp; <i>12 skills</i></summary>
 <br>
 
 The core PyTorch framework. Skills cover GPU kernel authoring, AOT compilation debugging, operator dispatch, and type extension.
@@ -123,7 +123,7 @@ The core PyTorch framework. Skills cover GPU kernel authoring, AOT compilation d
 </details>
 
 <details>
-<summary><a href="https://github.com/alibaba/MNN/tree/master/skills"><b>alibaba/MNN</b></a> [![Stars](https://img.shields.io/github/stars/alibaba/MNN?style=flat-square)](https://github.com/alibaba/MNN) — inference engine / operator runtime &nbsp;·&nbsp; <i>skills at <code>skills/</code></i></summary>
+<summary><a href="https://github.com/alibaba/MNN/tree/master/skills"><b>alibaba/MNN</b></a> <img src="https://img.shields.io/github/stars/alibaba/MNN?style=flat-square" alt="stars"> — inference engine / operator runtime &nbsp;·&nbsp; <i>skills at <code>skills/</code></i></summary>
 <br>
 
 A cross-platform inference framework with strong low-level optimization support. Skills cover operator extension and hardware-specific tuning.
@@ -141,7 +141,7 @@ A cross-platform inference framework with strong low-level optimization support.
 ## NN → GPU Compilers
 
 <details>
-<summary><a href="https://github.com/facebookincubator/AITemplate/tree/main/.claude/skills"><b>facebookincubator/AITemplate</b></a> [![Stars](https://img.shields.io/github/stars/facebookincubator/AITemplate?style=flat-square)](https://github.com/facebookincubator/AITemplate) — neural network → GPU binary compiler (CUDA/HIP)</summary>
+<summary><a href="https://github.com/facebookincubator/AITemplate/tree/main/.claude/skills"><b>facebookincubator/AITemplate</b></a> <img src="https://img.shields.io/github/stars/facebookincubator/AITemplate?style=flat-square" alt="stars"> — neural network → GPU binary compiler (CUDA/HIP)</summary>
 <br>
 
 A Python framework that compiles high-level neural network definitions into high-performance CUDA/HIP C++ code via operator fusion and backend code generation. Skills focus on operator addition and the CuTeDSL backend.
@@ -160,7 +160,7 @@ A Python framework that compiles high-level neural network definitions into high
 ## On-Device / Edge Inference
 
 <details>
-<summary><a href="https://github.com/pytorch/executorch/tree/main/.claude/skills"><b>pytorch/executorch</b></a> [![Stars](https://img.shields.io/github/stars/pytorch/executorch?style=flat-square)](https://github.com/pytorch/executorch) — on-device / edge inference runtime</summary>
+<summary><a href="https://github.com/pytorch/executorch/tree/main/.claude/skills"><b>pytorch/executorch</b></a> <img src="https://img.shields.io/github/stars/pytorch/executorch?style=flat-square" alt="stars"> — on-device / edge inference runtime</summary>
 <br>
 
 PyTorch's framework for running models on mobile and embedded devices. Skills cover the full lifecycle from build to deployment on resource-constrained hardware.
@@ -180,7 +180,7 @@ PyTorch's framework for running models on mobile and embedded devices. Skills co
 ## Kernel Benchmarking & Tooling
 
 <details>
-<summary><a href="https://github.com/flashinfer-ai/flashinfer-bench/tree/main/.claude/skills"><b>flashinfer-ai/flashinfer-bench</b></a> [![Stars](https://img.shields.io/github/stars/flashinfer-ai/flashinfer-bench?style=flat-square)](https://github.com/flashinfer-ai/flashinfer-bench) — LLM kernel benchmarking / workload analysis</summary>
+<summary><a href="https://github.com/flashinfer-ai/flashinfer-bench/tree/main/.claude/skills"><b>flashinfer-ai/flashinfer-bench</b></a> <img src="https://img.shields.io/github/stars/flashinfer-ai/flashinfer-bench?style=flat-square" alt="stars"> — LLM kernel benchmarking / workload analysis</summary>
 <br>
 
 A benchmarking companion to FlashInfer that automates the entire pipeline from kernel discovery to trace-based benchmarking. Interfaces closely with SGLang for real-world workload capture.
@@ -199,7 +199,7 @@ A benchmarking companion to FlashInfer that automates the entire pipeline from k
 ## Triton / GPU Experimentation
 
 <details>
-<summary><a href="https://github.com/Butanium/nnterp/tree/main/.claude/skills"><b>Butanium/nnterp</b></a> [![Stars](https://img.shields.io/github/stars/Butanium/nnterp?style=flat-square)](https://github.com/Butanium/nnterp) — Triton kernels / GPU performance engineering</summary>
+<summary><a href="https://github.com/Butanium/nnterp/tree/main/.claude/skills"><b>Butanium/nnterp</b></a> <img src="https://img.shields.io/github/stars/Butanium/nnterp?style=flat-square" alt="stars"> — Triton kernels / GPU performance engineering</summary>
 <br>
 
 A smaller but highly focused project for Triton-based kernel experimentation and GPU performance research.
@@ -214,10 +214,10 @@ A smaller but highly focused project for Triton-based kernel experimentation and
 
 | Project | Area |
 |---|---|
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) [![Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=flat-square)](https://github.com/vllm-project/vllm) | High-throughput LLM inference engine |
-| [triton-lang/triton](https://github.com/triton-lang/triton) [![Stars](https://img.shields.io/github/stars/triton-lang/triton?style=flat-square)](https://github.com/triton-lang/triton) | GPU kernel compiler / Triton language |
-| [Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention) [![Stars](https://img.shields.io/github/stars/Dao-AILab/flash-attention?style=flat-square)](https://github.com/Dao-AILab/flash-attention) | Memory-efficient attention kernels |
-| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) [![Stars](https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=flat-square)](https://github.com/mlc-ai/mlc-llm) | LLM compilation and deployment toolkit |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) <img src="https://img.shields.io/github/stars/vllm-project/vllm?style=flat-square" alt="stars"> | High-throughput LLM inference engine |
+| [triton-lang/triton](https://github.com/triton-lang/triton) <img src="https://img.shields.io/github/stars/triton-lang/triton?style=flat-square" alt="stars"> | GPU kernel compiler / Triton language |
+| [Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention) <img src="https://img.shields.io/github/stars/Dao-AILab/flash-attention?style=flat-square" alt="stars"> | Memory-efficient attention kernels |
+| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) <img src="https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=flat-square" alt="stars"> | LLM compilation and deployment toolkit |
 
 ## Inclusion Criteria
 
