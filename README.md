@@ -19,10 +19,15 @@ The projects below are already using in-repo skills and are closely related to l
 | [flashinfer-ai/flashinfer](https://github.com/flashinfer-ai/flashinfer/tree/main/.claude/skills) | GPU kernels / LLM inference ops | `.claude/skills` | Highly relevant for attention, decode, and custom inference operator work. |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/tree/main/.claude/skills) | production LLM inference framework | `.claude/skills` | NVIDIA's production-focused LLM runtime; skills are oriented around onboarding and CI failure triage. |
 | [Butanium/nnterp](https://github.com/Butanium/nnterp/tree/main/.claude/skills) | Triton kernels / GPU performance engineering | `.claude/skills` | A smaller but very relevant project for kernel-level experimentation and optimization. |
+| [pytorch/pytorch](https://github.com/pytorch/pytorch/tree/main/.claude/skills) | deep learning framework / operator authoring | `.claude/skills` | 12 skills covering Metal kernel authoring (Apple Silicon), AOT Inductor debugging, ATen operator dispatch, and unsigned integer type support. |
+| [pytorch/executorch](https://github.com/pytorch/executorch/tree/main/.claude/skills) | on-device / edge inference runtime | `.claude/skills` | 6 skills for cross-platform builds (iOS/Android/Cortex-M), model export to `.pte` format, binary-size analysis, and profiling. |
+| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy/tree/main/.claude/skills) | LLM deployment toolkit / inference serving | `.claude/skills` | 5 skills for onboarding new LLMs/VLMs into the PyTorch backend, environment checks, and codebase navigation. |
+| [facebookincubator/AITemplate](https://github.com/facebookincubator/AITemplate/tree/main/.claude/skills) | neural network → GPU binary compiler (CUDA/HIP) | `.claude/skills` | 6 skill files covering operator addition, CuTeDSL DSL backend migration, GEMM optimization, and testing. |
+| [flashinfer-ai/flashinfer-bench](https://github.com/flashinfer-ai/flashinfer-bench/tree/main/.claude/skills) | LLM kernel benchmarking / workload analysis | `.claude/skills` | 6 skills automating the kernel benchmarking pipeline: GPU kernel definition extraction, model onboarding, and real-world workload collection from SGLang. |
 
 ## Skill Content Snapshot (Research Notes)
 
-> Last checked: **2026-03-19 (UTC)**.
+> Last checked: **2026-03-31 (UTC)**.
 
 To make this list more actionable, below is a quick summary of what each project's in-repo skills are actually covering:
 
@@ -33,10 +38,15 @@ To make this list more actionable, below is a quick summary of what each project
 | [MNN](https://github.com/alibaba/MNN/tree/master/skills) | `add-new-op`, `arm-cpu-optimize`, `support-new-llm` | Operator extension plus ARM CPU optimization and model-support enablement. |
 | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/tree/main/.claude/skills) | `ad-model-onboard`, `ad-pipeline-failure-pr`, `ci-failure-retrieval` | Enterprise/production workflows: model onboarding and CI/pipeline incident handling. |
 | [nnterp](https://github.com/ndif-team/nnterp/tree/main/.claude/skills) | `doc-edit.md` | Lightweight documentation-assist skill in a Triton-centric experimentation project. |
+| [pytorch/pytorch](https://github.com/pytorch/pytorch/tree/main/.claude/skills) | `metal-kernel`, `aoti-debug`, `at-dispatch-v2`, `add-uint-support` | Metal GPU kernel authoring on Apple Silicon, AOT Inductor crash debugging, ATen operator dispatch mechanism, unsigned integer type extension. |
+| [pytorch/executorch](https://github.com/pytorch/executorch/tree/main/.claude/skills) | `building`, `export`, `cortex-m`, `profile`, `binary-size` | Cross-platform build (iOS/Android/MCU), model export to `.pte`, ARM Cortex-M backend, runtime profiling and binary-size budgeting. |
+| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy/tree/main/.claude/skills) | `support-new-model`, `code-navigation`, `check-env` | Onboarding new LLMs/VLMs into LMDeploy's PyTorch inference backend; codebase architecture guide; environment diagnostics. |
+| [facebookincubator/AITemplate](https://github.com/facebookincubator/AITemplate/tree/main/.claude/skills) | `adding-operators`, `migrate-gemm-to-cutedsl`, `architecture` | Adding custom operators across CUDA/HIP backends, migrating GEMM kernels to the CuTeDSL DSL, and overall compiler architecture. |
+| [flashinfer-ai/flashinfer-bench](https://github.com/flashinfer-ai/flashinfer-bench/tree/main/.claude/skills) | `extract-kernel-definitions`, `onboard-model`, `collect-workloads` | Automated pipeline: extract GPU kernel definitions from SGLang models, collect real inference workloads as benchmark traces, and onboard new LLMs across multiple repos. |
 
 ## Candidate Infra Frameworks (No in-repo skills found yet)
 
-As of 2026-03-19, the following popular infra repos were checked but no in-repo skill directory was found at common paths (e.g., `.claude/skills`, `skills`):
+As of 2026-03-31, the following popular infra repos were checked but no in-repo skill directory was found at common paths (e.g., `.claude/skills`, `skills`):
 
 - [vllm-project/vllm](https://github.com/vllm-project/vllm)
 - [triton-lang/triton](https://github.com/triton-lang/triton)
