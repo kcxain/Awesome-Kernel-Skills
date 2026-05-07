@@ -5,8 +5,8 @@
 A curated index of open-source projects that ship in-repo `skill` definitions for<br>
 **LLM infrastructure · GPU kernels · operator & compiler development**
 
-![11 projects tracked](https://img.shields.io/badge/projects-11-blue?style=flat-square)
-![updated 2026-03-31](https://img.shields.io/badge/updated-2026--03--31-green?style=flat-square)
+![15 projects tracked](https://img.shields.io/badge/projects-15-blue?style=flat-square)
+![updated 2026-05-07](https://img.shields.io/badge/updated-2026--05--07-green?style=flat-square)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
 
 </div>
@@ -24,7 +24,7 @@ A curated index of open-source projects that ship in-repo `skill` definitions fo
 - [Inclusion Criteria](#inclusion-criteria)
 - [Contributing](#contributing)
 
-> **Last checked: 2026-03-31 (UTC).** Skill directories are at `.claude/skills` unless noted otherwise.
+> **Last checked: 2026-05-07 (UTC).** Skill directories are at `.claude/skills` unless noted otherwise.
 
 ## GPU Kernel Libraries
 
@@ -33,6 +33,41 @@ A curated index of open-source projects that ship in-repo `skill` definitions fo
 <br>
 
 Kernel-focused repository from Hugging Face. Skills live at the **repository root** rather than `.claude/skills`.
+
+</details>
+
+<details>
+<summary><a href="https://github.com/linkedin/Liger-Kernel/tree/main/.claude/skills"><b>linkedin/Liger-Kernel</b></a> <img src="https://img.shields.io/github/stars/linkedin/Liger-Kernel?style=flat-square" alt="stars"> — Triton kernels for LLM training &nbsp;·&nbsp; <i>3 skills</i></summary>
+<br>
+
+A collection of efficient Triton kernels for LLM training (fused cross-entropy, RoPE, SwiGLU, etc.) from LinkedIn. Skills cover the full kernel lifecycle: authoring new kernels, performance profiling/optimization, and auto-patching Hugging Face models to use Liger kernels.
+
+**Skills:** <kbd>liger-kernel-dev</kbd> <kbd>liger-kernel-perf</kbd> <kbd>liger-autopatch</kbd>
+
+| Skill | What it does |
+|---|---|
+| `liger-kernel-dev` | End-to-end workflow for writing a new Triton kernel: profiling, templates for ops/benchmarks/functional APIs |
+| `liger-kernel-perf` | Profile and optimize an existing kernel; compare variants and apply optimization strategies |
+| `liger-autopatch` | Analyze a Hugging Face model and determine which Liger kernels can replace its ops |
+
+</details>
+
+<details>
+<summary><a href="https://github.com/ModelTC/LightX2V/tree/main/.claude/skills"><b>ModelTC/LightX2V</b></a> <img src="https://img.shields.io/github/stars/ModelTC/LightX2V?style=flat-square" alt="stars"> — video generation inference / Intel XPU kernels</summary>
+<br>
+
+A lightweight video generation inference framework with an extensive suite of Intel XPU kernel skills covering ESIMD GEMM/GEMV, scaled dot-product attention, and oneDNN FP8 GEMM. Kernel skills live under `.claude/skills/lightx2v_kernel_skills/Intel_XPU/`.
+
+**Skills:** <kbd>intel-esimd-base</kbd> <kbd>xe2-esimd-gemm</kbd> <kbd>xe2-esimd-gemv</kbd> <kbd>xe2-sdp-kernels</kbd> <kbd>onednn-fp8-gemm</kbd> <kbd>Model_Enable_Intel_XPU</kbd>
+
+| Skill | What it does |
+|---|---|
+| `intel-esimd-base` | Foundational Intel ESIMD programming patterns for XPU kernels |
+| `xe2-esimd-gemm` | Implement and tune FP16 GEMM kernels on Intel Xe2 GPUs with ESIMD |
+| `xe2-esimd-gemv` | Implement W4A16 and FP16 GEMV kernels with SIMD-optimized memory access |
+| `xe2-sdp-kernels` | Flash-attention-style scaled dot-product kernels for Intel Xe2 |
+| `onednn-fp8-gemm` | FP8 GEMM via the oneDNN API on Intel hardware |
+| `Model_Enable_Intel_XPU` | Enable and validate a video-generation model on Intel XPU |
 
 </details>
 
@@ -102,15 +137,34 @@ A toolkit for compressing, deploying, and serving LLMs with TurboMind and PyTorc
 
 </details>
 
+<details>
+<summary><a href="https://github.com/intel/auto-round/tree/main/.claude/skills"><b>intel/auto-round</b></a> <img src="https://img.shields.io/github/stars/intel/auto-round?style=flat-square" alt="stars"> — SOTA low-bit LLM quantization / inference &nbsp;·&nbsp; <i>7 skills</i></summary>
+<br>
+
+Intel's state-of-the-art quantization algorithm for high-accuracy low-bit LLM inference, supporting CPU/XPU/CUDA and compatible with vLLM, SGLang, and Transformers. Skills span the full extension surface: new quantization datatypes, inference backends, export formats, and model onboarding.
+
+**Skills:** <kbd>add-quantization-datatype</kbd> <kbd>add-inference-backend</kbd> <kbd>add-export-format</kbd> <kbd>adapt-new-llm</kbd> <kbd>add-vlm-model</kbd> <kbd>adapt-new-diffusion-model</kbd> <kbd>review-pr</kbd>
+
+| Skill | What it does |
+|---|---|
+| `add-quantization-datatype` | Implement a new quantization datatype (e.g. FP4, NF4) across the stack |
+| `add-inference-backend` | Wire up a new inference backend (vLLM, SGLang, ONNX, etc.) |
+| `add-export-format` | Add support for exporting quantized models to a new format |
+| `adapt-new-llm` | Onboard a new LLM architecture for quantization |
+| `add-vlm-model` | Extend quantization support to vision-language models |
+| `adapt-new-diffusion-model` | Add quantization support for diffusion model architectures |
+
+</details>
+
 ## Deep Learning Frameworks
 
 <details>
-<summary><a href="https://github.com/pytorch/pytorch/tree/main/.claude/skills"><b>pytorch/pytorch</b></a> <img src="https://img.shields.io/github/stars/pytorch/pytorch?style=flat-square" alt="stars"> — deep learning framework / operator authoring &nbsp;·&nbsp; <i>12 skills</i></summary>
+<summary><a href="https://github.com/pytorch/pytorch/tree/main/.claude/skills"><b>pytorch/pytorch</b></a> <img src="https://img.shields.io/github/stars/pytorch/pytorch?style=flat-square" alt="stars"> — deep learning framework / operator authoring &nbsp;·&nbsp; <i>13 skills</i></summary>
 <br>
 
-The core PyTorch framework. Skills cover GPU kernel authoring, AOT compilation debugging, operator dispatch, and type extension.
+The core PyTorch framework. Skills cover GPU kernel authoring, AOT compilation debugging, operator dispatch, type extension, and contributor workflows.
 
-**Skills:** <kbd>metal-kernel</kbd> <kbd>aoti-debug</kbd> <kbd>at-dispatch-v2</kbd> <kbd>add-uint-support</kbd> <kbd>pt2-bug-basher</kbd> + 7 more
+**Skills:** <kbd>metal-kernel</kbd> <kbd>aoti-debug</kbd> <kbd>at-dispatch-v2</kbd> <kbd>add-uint-support</kbd> <kbd>pt2-bug-basher</kbd> <kbd>distributed-triage</kbd> <kbd>skill-writer</kbd> + 6 more
 
 | Skill | What it does |
 |---|---|
@@ -119,6 +173,8 @@ The core PyTorch framework. Skills cover GPU kernel authoring, AOT compilation d
 | `at-dispatch-v2` | Work with the ATen operator dispatch mechanism |
 | `add-uint-support` | Extend PyTorch operators with unsigned integer type support |
 | `pt2-bug-basher` | Systematic bug-fixing workflow for PyTorch 2.0 issues |
+| `distributed-triage` | Triage and diagnose distributed training failures |
+| `skill-writer` | Create new Claude Code skills for the PyTorch repository |
 
 </details>
 
@@ -154,6 +210,22 @@ A Python framework that compiles high-level neural network definitions into high
 | `migrate-gemm-to-cutedsl` | Migrate GEMM kernels from legacy templates to the CuTeDSL DSL |
 | `add-cutedsl-backend` | Add a new CuTeDSL backend for a hardware target |
 | `architecture` | Overview of the AITemplate compiler pipeline |
+
+</details>
+
+<details>
+<summary><a href="https://github.com/openvinotoolkit/openvino/tree/main/.claude/skills"><b>openvinotoolkit/openvino</b></a> <img src="https://img.shields.io/github/stars/openvinotoolkit/openvino?style=flat-square" alt="stars"> — Intel inference optimization toolkit &nbsp;·&nbsp; <i>3 skills</i></summary>
+<br>
+
+Intel's open-source toolkit for optimizing and deploying AI inference across CPU, GPU, and NPU. Skills focus on debugging the graph transformation pipeline and the Intel GPU/CPU compute plugins, plus enforcing coding standards.
+
+**Skills:** <kbd>ov-debug</kbd> <kbd>ov-debug-matcher-pass</kbd> <kbd>ov-ensure-coding-style</kbd>
+
+| Skill | What it does |
+|---|---|
+| `ov-debug` | Debug inference failures across the OpenVINO CPU and GPU plugins and transformation pipeline |
+| `ov-debug-matcher-pass` | Diagnose graph matcher/pass issues: incorrect fusions, missing patterns, wrong output shapes |
+| `ov-ensure-coding-style` | Enforce OpenVINO C++ coding conventions and auto-fix violations |
 
 </details>
 
@@ -210,7 +282,7 @@ A smaller but highly focused project for Triton-based kernel experimentation and
 
 ## Candidate Frameworks (No Skills Yet)
 
-> As of **2026-03-31**, the following popular infra repos were checked but no skill directory was found at common paths (`.claude/skills`, `skills`). Tracked here to focus future contributor discovery effort.
+> As of **2026-05-07**, the following popular infra repos were checked but no skill directory was found at common paths (`.claude/skills`, `skills`). Tracked here to focus future contributor discovery effort.
 
 | Project | Area |
 |---|---|
